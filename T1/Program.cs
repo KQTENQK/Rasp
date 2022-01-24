@@ -23,14 +23,6 @@ namespace T1
         {
             _bullets.Pop().MoveForward();
         }
-
-        public void Reload()
-        {
-            for (int i = 0; i < _magazineSize; i++)
-            {
-                _bullets.Push(new Bullet(_damage));
-            }
-        }
     }
 
     public class Bullet
